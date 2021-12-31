@@ -56,33 +56,33 @@
 
 			<form:SimpleForm title="Generic Mask Input" editable="true">
 
-                <Label text="Text" labelFor="inputText" />
+                <Label id="Label1" text="Text" labelFor="inputText" />
                 <Input
                     id="inputText"
                     placeholder="Enter text"
                     class="sapUiSmallMarginBottom" />
-                <Label text="Email" labelFor="inputEmail" />
+                <Label id="Label2" text="Email" labelFor="inputEmail" />
                 <Input
                     id="inputEmail"
                     type="Email"
                     placeholder="Enter email"
                     class="sapUiSmallMarginBottom" />
 
-                <Label text="Telephone" labelFor="inputTel" />
+                <Label id="Label3" text="Telephone" labelFor="inputTel" />
                 <Input
                     id="inputTel"
                     type="Tel"
                     placeholder="Enter telephone number"
                     class="sapUiSmallMarginBottom" />
 
-                <Label text="Number" labelFor="inputNumber" />
+                <Label id="Label4" text="Number" labelFor="inputNumber" />
                 <Input
                     id="inputNumber"
                     type="Number"
                     placeholder="Enter a number"
                     class="sapUiSmallMarginBottom" />
 
-                <Label text="URL" labelFor="inputUrl" />
+                <Label id="Label5" text="URL" labelFor="inputUrl" />
                 <Input
                     id="inputUrl"
                     type="Url"
