@@ -1,0 +1,117 @@
+<mvc:View
+    controllerName="my.ui.firstapp.myfirstproject.controller.FirstView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:form="sap.ui.layout.form"
+>
+    <!-- <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                    <VBox>
+                        <Label text="Text" labelFor="inputText" />
+                        <Input
+                            id="inputText"
+                            placeholder="Enter text"
+                            class="sapUiSmallMarginBottom" />
+                        <Label text="Email" labelFor="inputEmail" />
+                        <Input
+                            id="inputEmail"
+                            type="Email"
+                            placeholder="Enter email"
+                            class="sapUiSmallMarginBottom" />
+
+                        <Label text="Telephone" labelFor="inputTel" />
+                        <Input
+                            id="inputTel"
+                            type="Tel"
+                            placeholder="Enter telephone number"
+                            class="sapUiSmallMarginBottom" />
+
+                        <Label text="Number" labelFor="inputNumber" />
+                        <Input
+                            id="inputNumber"
+                            type="Number"
+                            placeholder="Enter a number"
+                            class="sapUiSmallMarginBottom" />
+
+                        <Label text="URL" labelFor="inputUrl" />
+                        <Input
+                            id="inputUrl"
+                            type="Url"
+                            placeholder="Enter URL"
+                            class="sapUiSmallMarginBottom" />
+                    </VBox>
+                    
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell> -->
+    	<App>
+		<Page showHeader="false">
+
+			<form:SimpleForm title="Generic Mask Input" editable="true">
+
+                <Label text="Text" labelFor="inputText" />
+                <Input
+                    id="inputText"
+                    placeholder="Enter text"
+                    class="sapUiSmallMarginBottom" />
+                <Label text="Email" labelFor="inputEmail" />
+                <Input
+                    id="inputEmail"
+                    type="Email"
+                    placeholder="Enter email"
+                    class="sapUiSmallMarginBottom" />
+
+                <Label text="Telephone" labelFor="inputTel" />
+                <Input
+                    id="inputTel"
+                    type="Tel"
+                    placeholder="Enter telephone number"
+                    class="sapUiSmallMarginBottom" />
+
+                <Label text="Number" labelFor="inputNumber" />
+                <Input
+                    id="inputNumber"
+                    type="Number"
+                    placeholder="Enter a number"
+                    class="sapUiSmallMarginBottom" />
+
+                <Label text="URL" labelFor="inputUrl" />
+                <Input
+                    id="inputUrl"
+                    type="Url"
+                    placeholder="Enter URL"
+                    class="sapUiSmallMarginBottom" />
+			</form:SimpleForm>
+
+			<form:SimpleForm title="Possible usages (may require additional coding)" editable="true">
+
+				<Label text="Serial number" tooltip="Serial number. Digits and capital letters allowed"/>
+				<MaskInput mask="CCCC-CCCC-CCCC-CCCC-CCCC" placeholderSymbol="_" placeholder="Enter serial number" showClearIcon="{/showClearIcon}">
+					<rules>
+						<MaskInputRule maskFormatSymbol="C" regex="[A-Z0-9]"/>
+					</rules>
+				</MaskInput>
+
+				<Label text="Product activation key"
+					   tooltip="Product activation key. Starts with 'SAP' followed by digits and capital letters"/>
+				<MaskInput mask="SAP-CCCCC-CCCCC" placeholderSymbol="_" placeholder="Enter activation key" showClearIcon="{/showClearIcon}">
+					<rules>
+						<MaskInputRule maskFormatSymbol="C" regex="[A-Z0-9]"/>
+					</rules>
+				</MaskInput>
+
+				<Label text="ISBN" tooltip="ISBN"/>
+				<MaskInput mask="999-99-999-9999-9" placeholderSymbol="_" placeholder="Enter ISBN" showClearIcon="{/showClearIcon}" />
+
+			</form:SimpleForm>
+
+		</Page>
+	</App>
+</mvc:View>
